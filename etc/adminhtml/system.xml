@@ -1,0 +1,69 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="pixiemedia" translate="label" sortOrder="999">
+            <label>Pixie Commerce</label>
+        </tab>
+        <section id="inserts" sortOrder="20" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+            <label>Security Suite: Replacement Scripts</label>
+            <tab>pixiemedia</tab>
+            <resource>PixieMedia_Security::config_pixiemedia_replacements</resource>
+			
+			<group id="blocker" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+                <label>Disable Output</label>
+                <field id="block_head_includes" type="select" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+                    <label>Block Default Head Includes</label>
+                    <comment>Block output of design/head/includes</comment>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="block_absolute_footer" type="select" sortOrder="20" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+                    <label>Block Default Absolute Footer</label>
+                    <comment>Block output of design/footer/absolute_footer</comment>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="block_shipping_policy_content" type="select" sortOrder="30" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+                    <label>Block Default Shipping Policy Content</label>
+                    <comment>Block output of shipping/shipping_policy/shipping_policy_content</comment>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+			
+            <group id="head" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+                <label>Replace Output: HTML Head</label>
+                <field id="replace_header" type="select" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+                    <label>Enable</label>
+                    <comment>Block output of design/head/includes and replace with your own value below.</comment>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="includes" type="textarea" sortOrder="20" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+                    <label>Scripts and Style Sheets</label>
+                    <comment>This will be included before head closing tag in page HTML.</comment>
+                </field>
+            </group>
+            <group id="footer" sortOrder="20" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+                <label>Replace Output: Footer</label>
+                <field id="replace_footer" type="select" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+                    <label>Enable</label>
+                    <comment>Block output of design/footer/absolute_footer and replace with your own value below.</comment>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="includes" type="textarea" sortOrder="20" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+                    <label> Miscellaneous HTML</label>
+                    <comment>This will be displayed just before the body closing tag.</comment>
+                </field>
+            </group>
+            <group id="shipping_policy" sortOrder="30" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+                <label>Replace Output: Shipping Policy</label>
+                <field id="replace_shipping_policy" type="select" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+                    <label>Enable</label>
+                    <comment>Block output of shipping/shipping_policy/shipping_policy_content and replace with your own value below.</comment>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="shipping_policy_content" type="textarea" sortOrder="20" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+                    <label>Shipping Policy</label>
+                </field>
+            </group>
+        </section>
+        
+    </system>
+</config>

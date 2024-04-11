@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    
+    <fieldset name="other_settings" sortOrder="30">
+        <fieldset name="head">
+            <field name="head_includes" formElement="textarea">
+                <settings>
+                    <notice translate="true"><![CDATA[NOTE: Pixie Commerce Security module is installed.  Please review the settings in Pixie Commerce > Security Suite. This will be included before head closing tag in page HTML.]]></notice>
+                    <dataType>text</dataType>
+                    <label translate="true">Scripts and Style Sheets</label>
+                    <dataScope>head_includes</dataScope>
+                </settings>
+            </field>
+        </fieldset>
+        <fieldset name="footer">
+            <field name="footer_absolute_footer" formElement="textarea">
+                <settings>
+                    <notice translate="true"><![CDATA[NOTE: Pixie Commerce Security module is installed.  Please review the settings in Pixie Commerce > Security Suite. This will be displayed just before the body closing tag.]]></notice>
+                    <dataType>text</dataType>
+                    <label translate="true">Miscellaneous HTML</label>
+                    <dataScope>footer_absolute_footer</dataScope>
+                </settings>
+            </field>
+            
+        </fieldset>
+    </fieldset>
+</form>

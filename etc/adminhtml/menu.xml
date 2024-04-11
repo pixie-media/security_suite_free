@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="PixieMedia_Security::pixiemedia_options" title="Security Suite: Scripts" module="PixieMedia_Security" sortOrder="600" resource="PixieMedia_Security::config_pixiemedia_security" parent="PixieMedia_Core::index" />
+        <add id="PixieMedia_Security::pixiemedia_security_replacements" title="Options" module="PixieMedia_Security" sortOrder="10" resource="PixieMedia_Security::config_pixiemedia_replacements" parent="PixieMedia_Security::pixiemedia_options" action="adminhtml/system_config/edit/section/inserts"/>
+    </menu>
+</config>
