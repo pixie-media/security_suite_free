@@ -1,13 +1,13 @@
-# Pixie Media Security
+# Pixie Commerce Security
 
-The Pixie Media security suite
+The Pixie Commerce security suite
 
-This includes the following functionality
+This FREE version includes the following functionality
 
  - Disable Output
  - Script Output Replacer
  
- Features Coming Soon
+ Premium features Coming Soon
  
  - File scanner 
  - Database scanner 
